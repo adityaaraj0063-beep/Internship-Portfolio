@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Raj | Full-Stack Developer Portfolio</title>
+
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description"
+    content="Personal portfolio of Aditya Raj - Full-Stack Developer skilled in HTML, CSS, JavaScript, Node.js, Express, and Database Systems. Built for Thiranex Internship.">
+  <meta name="keywords"
+    content="Aditya Raj, Portfolio, Full-Stack Developer, Node.js, Express, JavaScript, SQLite, MongoDB, Thiranex">
+  <meta name="author" content="Aditya Raj">
+  <meta property="og:title" content="Aditya Raj | Full-Stack Developer Portfolio">
+  <meta property="og:description"
+    content="Showcasing modern full-stack web applications, backend APIs, and database engineering.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Decorative Glowing Orbs -->
+  <div class="glow-orb orb-1" aria-hidden="true"></div>
+  <div class="glow-orb orb-2" aria-hidden="true"></div>
+  <div class="glow-orb orb-3" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" id="brand-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Aditya</span>
+        <span class="logo-accent">.dev</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active" id="nav-home">Home</a></li>
+          <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+          <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+          <li><a href="#experience" class="nav-link" id="nav-experience">Experience</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle dark/light theme"
+          title="Toggle Theme">
+          <i class="fas fa-sun" id="theme-icon-sun"></i>
+          <i class="fas fa-moon" id="theme-icon-moon"></i>
+        </button>
+
+        <!-- CTA Button -->
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta" id="nav-cta-hire">
+          <span>Let's Talk</span>
+          <i class="fas fa-paper-plane"></i>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <ul class="mobile-nav-list">
+      <li><a href="#hero" class="mobile-nav-link" id="mob-home"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#about" class="mobile-nav-link" id="mob-about"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="#skills" class="mobile-nav-link" id="mob-skills"><i class="fas fa-code"></i> Skills</a></li>
+      <li><a href="#projects" class="mobile-nav-link" id="mob-projects"><i class="fas fa-project-diagram"></i>
+          Projects</a></li>
+      <li><a href="#experience" class="mobile-nav-link" id="mob-experience"><i class="fas fa-briefcase"></i>
+          Experience</a></li>
+      <li><a href="#contact" class="mobile-nav-link" id="mob-contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="#contact" class="btn btn-primary btn-block" id="mob-cta">Get in Touch</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="section-container hero-grid">
+        <!-- Hero Content -->
+        <div class="hero-content">
+          <div class="status-badge" id="hero-status-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for Full-Stack Roles & Internships</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-heading">
+            Hi, I'm <span class="gradient-text">Aditya Raj</span>
+          </h1>
+
+          <div class="typewriter-container" aria-label="Role Description">
+            <span class="typewriter-prefix">I build </span>
+            <span class="typewriter-text" id="typewriter-text"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-bio" id="hero-bio">
+            A passionate Full-Stack Developer specializing in building modern, high-performance web applications with
+            seamless frontend experiences and robust Node.js / Express backends connected to live databases.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+              <span>View My Work</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">
+              <span>Contact Me</span>
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/adityaaraaj0063" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline" id="hero-btn-github" title="Visit GitHub Profile">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <span class="social-label">Connect with me:</span>
+            <div class="social-icons">
+              <a href="https://github.com/adityaaraaj0063" target="_blank" rel="noopener noreferrer" class="social-icon"
+                aria-label="GitHub Profile" id="social-gh">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+                aria-label="LinkedIn Profile" id="social-in">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:adityaaraaj0063@gmail.com" class="social-icon" aria-label="Send Email" id="social-mail">
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon"
+                aria-label="Twitter Profile" id="social-tw">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Avatar Card -->
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper">
+            <div class="avatar-card-glow"></div>
+            <div class="avatar-card">
+              <div class="avatar-image-container">
+                <img src="assets/avatar.jpg" alt="Aditya Raj - Full-Stack Developer" class="avatar-img"
+                  id="hero-avatar-img">
+              </div>
+
+              <!-- Floating Tech Badges -->
+              <div class="floating-pill pill-top-left" id="pill-node">
+                <i class="fab fa-node-js node-icon"></i>
+                <div class="pill-info">
+                  <span class="pill-title">Node & Express</span>
+                  <span class="pill-sub">REST APIs</span>
+                </div>
+              </div>
+
+              <div class="floating-pill pill-bottom-right" id="pill-db">
+                <i class="fas fa-database db-icon"></i>
+                <div class="pill-info">
+                  <span class="pill-title">SQL & MongoDB</span>
+                  <span class="pill-sub">Live Database</span>
+                </div>
+              </div>
+
+              <div class="floating-pill pill-bottom-left" id="pill-frontend">
+                <i class="fab fa-js js-icon"></i>
+                <div class="pill-info">
+                  <span class="pill-title">Modern JS & CSS</span>
+                  <span class="pill-sub">Clean Architecture</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Counter -->
+      <div class="metrics-bar">
+        <div class="section-container metrics-grid">
+          <div class="metric-item">
+            <div class="metric-number" data-count="15">15+</div>
+            <div class="metric-label">Completed Projects</div>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <div class="metric-number" data-count="12">12+</div>
+            <div class="metric-label">Technologies Mastered</div>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <div class="metric-number">Full-Stack</div>
+            <div class="metric-label">Architecture Design</div>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-item">
+            <div class="metric-number" id="api-status-metric">Active</div>
+            <div class="metric-label">Backend API Status</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THIRANEX INTERNSHIP HIGHLIGHT BANNER -->
+    <section class="banner-section" id="internship-banner">
+      <div class="section-container">
+        <div class="internship-badge-card">
+          <div class="internship-left">
+            <div class="internship-tag">
+              <i class="fas fa-award"></i>
+              <span>Official Submission</span>
+            </div>
+            <h3 class="internship-title">Thiranex Skill Development &amp; Future Tech</h3>
+            <p class="internship-desc">
+              Task 1: <strong>Personal Portfolio Website</strong> &mdash; Built with Full-Stack Architecture
+              (HTML/CSS/JS frontend, Node.js/Express backend, and persistent database storage).
+            </p>
+          </div>
+          <div class="internship-right">
+            <div class="submission-stats">
+              <span class="due-pill"><i class="far fa-clock"></i> Submission Ready</span>
+              <a href="#projects" class="btn btn-sm btn-outline">Explore Submission</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-subtitle">Get To Know Me</span>
+          <h2 class="section-title">About <span class="gradient-text">Aditya Raj</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-column">
+            <h3 class="about-subheading">A curious engineer driven by passion for building impactful digital products.
+            </h3>
+            <p class="about-paragraph">
+              Hello! I'm Aditya Raj, a full-stack developer with a strong foundation in designing, coding, and deploying
+              modern web applications. I bridge the gap between visually stunning, responsive user interfaces and
+              dependable, secure backend server architectures.
+            </p>
+            <p class="about-paragraph">
+              My engineering approach prioritizes clean code structure, performance optimization, and scalable database
+              schemas. Whether it's crafting interactive frontend experiences using modern JavaScript or architecting
+              RESTful APIs with Node.js and Express, I build solutions engineered for real-world impact.
+            </p>
+
+            <div class="about-features-grid">
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-layer-group"></i></div>
+                <div class="feature-content">
+                  <h4>Full-Stack Integration</h4>
+                  <p>Connecting dynamic frontends to REST APIs and live databases seamlessly.</p>
+                </div>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                <div class="feature-content">
+                  <h4>Performance &amp; Speed</h4>
+                  <p>Optimized assets, minimal load latency, and responsive design across all devices.</p>
+                </div>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="feature-content">
+                  <h4>Security &amp; Best Practices</h4>
+                  <p>Input validation, secure headers, environment variables, and modular codebase.</p>
+                </div>
+              </div>
+              <div class="feature-card">
+                <div class="feature-icon"><i class="fas fa-cloud"></i></div>
+                <div class="feature-content">
+                  <h4>Deployment Ready</h4>
+                  <p>Continuous integration and hosting on Vercel, Netlify, Render, and GitHub.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-info-column">
+            <div class="info-card">
+              <h4 class="info-card-title">Quick Information</h4>
+              <ul class="info-list">
+                <li><span class="info-label">Name:</span> <span class="info-val">Aditya Raj</span></li>
+                <li><span class="info-label">Email:</span> <span class="info-val">adityaaraaj0063@gmail.com</span></li>
+                <li><span class="info-label">Role:</span> <span class="info-val">Full-Stack Web Developer</span></li>
+                <li><span class="info-label">Location:</span> <span class="info-val">India</span></li>
+                <li><span class="info-label">Availability:</span> <span class="info-val badge-available">Open to
+                    Opportunities</span></li>
+                <li><span class="info-label">Internship:</span> <span class="info-val">Thiranex Tech</span></li>
+              </ul>
+              <div class="info-card-actions">
+                <a href="#contact" class="btn btn-primary btn-block">
+                  <i class="fas fa-paper-plane"></i> Send a Message
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills-section" id="skills">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-subtitle">Technical Proficiency</span>
+          <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+          <div class="title-underline"></div>
+          <p class="section-lead">Technologies I use daily to bring creative ideas to life.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-tabs-container">
+          <button class="filter-tab-btn active" data-filter="All">All Technologies</button>
+          <button class="filter-tab-btn" data-filter="Frontend">Frontend</button>
+          <button class="filter-tab-btn" data-filter="Backend">Backend</button>
+          <button class="filter-tab-btn" data-filter="Database">Database</button>
+          <button class="filter-tab-btn" data-filter="DevOps & Tools">DevOps &amp; Tools</button>
+        </div>
+
+        <!-- Skills Grid (Dynamically Populated from API, with static fallback) -->
+        <div class="skills-grid" id="skills-grid">
+          <div class="loading-spinner">
+            <i class="fas fa-circle-notch fa-spin"></i> Loading technical skills...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects-section" id="projects">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="header-split">
+            <div>
+              <span class="section-subtitle">Featured Work</span>
+              <h2 class="section-title">Full-Stack <span class="gradient-text">Projects</span></h2>
+              <div class="title-underline"></div>
+            </div>
+            <div class="header-action">
+              <button class="btn btn-outline btn-sm" id="btn-open-add-project"
+                title="Add a new project to the database">
+                <i class="fas fa-plus"></i> Add Project (Live DB Test)
+              </button>
+            </div>
+          </div>
+          <p class="section-lead">Real-world applications built with frontend, backend REST APIs, and database
+            integration.</p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filter-tabs">
+          <button class="proj-tab active" data-cat="All">All Projects</button>
+          <button class="proj-tab" data-cat="Full Stack">Full Stack</button>
+          <button class="proj-tab" data-cat="Frontend">Frontend</button>
+          <button class="proj-tab" data-cat="Backend">Backend</button>
+          <button class="proj-tab" data-cat="AI & Automation">AI &amp; Automation</button>
+        </div>
+
+        <!-- Dynamic Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <div class="loading-spinner">
+            <i class="fas fa-circle-notch fa-spin"></i> Fetching projects from database...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & CERTIFICATIONS SECTION -->
+    <section class="experience-section" id="experience">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-subtitle">Journey &amp; Milestones</span>
+          <h2 class="section-title">Experience &amp; <span class="gradient-text">Education</span></h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-date">Oct 2026 - Present</span>
+                <span class="badge-role">Internship</span>
+              </div>
+              <h3 class="timeline-title">Full-Stack Web Development Intern</h3>
+              <h4 class="timeline-company">Thiranex (Skill Development &amp; Future Tech)</h4>
+              <p class="timeline-description">
+                Building full-stack web applications integrating modern JavaScript client frontends with Node.js and
+                Express backend REST APIs, managing database schemas, and preparing scalable deployments on modern cloud
+                hosting platforms.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">HTML5/CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Express.js</span>
+                <span class="tag">Database (SQL/MongoDB)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-date">2023 - 2027</span>
+                <span class="badge-role">Academics</span>
+              </div>
+              <h3 class="timeline-title">Bachelor of Technology in Computer Science</h3>
+              <h4 class="timeline-company">Engineering University</h4>
+              <p class="timeline-description">
+                Focused coursework in Data Structures &amp; Algorithms, Object-Oriented Programming, Database Management
+                Systems (DBMS), Operating Systems, and Computer Networks.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Data Structures</span>
+                <span class="tag">Algorithms</span>
+                <span class="tag">DBMS</span>
+                <span class="tag">Software Engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-date">2025 - 2026</span>
+                <span class="badge-role">Certification</span>
+              </div>
+              <h3 class="timeline-title">Full-Stack Web Development Certification</h3>
+              <h4 class="timeline-company">Specialized Online Track</h4>
+              <p class="timeline-description">
+                Extensive practical training in MERN stack fundamentals, responsive layouts, API architecture,
+                authentication schemes, and version control using Git &amp; GitHub.
+              </p>
+              <div class="timeline-tags">
+                <span class="tag">Git &amp; GitHub</span>
+                <span class="tag">RESTful Architecture</span>
+                <span class="tag">Clean Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+          <div class="title-underline"></div>
+          <p class="section-lead">Have a project in mind, an internship opportunity, or just want to say hi? My inbox is
+            always open!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Information Cards -->
+          <div class="contact-info-cards">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope-open-text"></i>
+              </div>
+              <div class="contact-card-content">
+                <h4>Email Address</h4>
+                <a href="mailto:adityaaraaj0063@gmail.com" class="contact-card-link">adityaaraaj0063@gmail.com</a>
+                <span class="contact-sub">Always responsive within 24 hours</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="contact-card-content">
+                <h4>GitHub Profile</h4>
+                <a href="https://github.com/adityaaraaj0063" target="_blank" rel="noopener noreferrer"
+                  class="contact-card-link">github.com/adityaaraaj0063</a>
+                <span class="contact-sub">Explore my open-source repositories</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="contact-card-content">
+                <h4>LinkedIn Network</h4>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                  class="contact-card-link">Connect on LinkedIn</a>
+                <span class="contact-sub">Professional network &amp; updates</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-card-content">
+                <h4>Current Location</h4>
+                <p class="contact-card-text">India (Open to Remote &amp; On-Site)</p>
+                <span class="contact-sub">IST (UTC +5:30)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Full-Stack Contact Form (Directly writes to SQLite/MongoDB backend) -->
+          <div class="contact-form-container">
+            <div class="form-header">
+              <h3>Send a Message</h3>
+              <p>Submitted messages are stored directly in the backend database.</p>
+            </div>
+
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fas fa-user input-icon"></i>
+                    <input type="text" id="name" name="name" class="form-input" placeholder="e.g. John Doe" required>
+                  </div>
+                  <span class="error-msg" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Your Email <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fas fa-envelope input-icon"></i>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="e.g. john@example.com"
+                      required>
+                  </div>
+                  <span class="error-msg" id="email-error"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fas fa-tag input-icon"></i>
+                  <input type="text" id="subject" name="subject" class="form-input"
+                    placeholder="e.g. Internship Inquiry / Project Discussion" required>
+                </div>
+                <span class="error-msg" id="subject-error"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message <span class="required">*</span></label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fas fa-comment-alt input-icon"></i>
+                  <textarea id="message" name="message" class="form-input form-textarea" rows="5"
+                    placeholder="Write your message here..." required></textarea>
+                </div>
+                <span class="error-msg" id="message-error"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="btn-submit-contact">
+                <span class="btn-text">Send Message</span>
+                <i class="fas fa-paper-plane btn-icon"></i>
+                <div class="btn-spinner" style="display: none;">
+                  <i class="fas fa-circle-notch fa-spin"></i>
+                </div>
+              </button>
+
+              <div class="form-status" id="form-status" style="display: none;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="section-container footer-content">
+      <div class="footer-top">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">Aditya</span>
+          <span class="logo-accent">.dev</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Crafting modern, scalable, full-stack digital experiences.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/adityaaraaj0063" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+              class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:adityaaraaj0063@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Aditya Raj. All Rights Reserved.</p>
+        <p class="thiranex-credit">Thiranex Internship Project &mdash; Task 1: Personal Portfolio Website</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <button class="back-to-top-btn" id="back-to-top" aria-label="Back to top of page" title="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-content-body" id="modal-content-body">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ADD PROJECT MODAL (Live DB Verification) -->
+  <div class="modal-overlay" id="add-project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="add-modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-form-header">
+        <div class="modal-badge"><i class="fas fa-database"></i> Live Database Test</div>
+        <h3>Add New Project to Database</h3>
+        <p>This directly adds a new project entry into the active SQLite/MongoDB database.</p>
+      </div>
+      <form id="add-project-form" class="modal-form">
+        <div class="form-group">
+          <label for="new-proj-title">Project Title *</label>
+          <input type="text" id="new-proj-title" class="form-input" placeholder="e.g. AI Code Assistant" required>
+        </div>
+        <div class="form-group">
+          <label for="new-proj-category">Category *</label>
+          <select id="new-proj-category" class="form-input" required>
+            <option value="Full Stack">Full Stack</option>
+            <option value="Frontend">Frontend</option>
+            <option value="Backend">Backend</option>
+            <option value="AI & Automation">AI & Automation</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="new-proj-desc">Description *</label>
+          <textarea id="new-proj-desc" class="form-input" rows="3" placeholder="Brief project summary..."
+            required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="new-proj-tags">Tech Stack (comma separated)</label>
+          <input type="text" id="new-proj-tags" class="form-input" placeholder="Node.js, Express, React, PostgreSQL">
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="new-proj-live">Live Demo URL</label>
+            <input type="url" id="new-proj-live" class="form-input" placeholder="https://example.com">
+          </div>
+          <div class="form-group">
+            <label for="new-proj-gh">GitHub Repo URL</label>
+            <input type="url" id="new-proj-gh" class="form-input" placeholder="https://github.com/adityaaraaj0063/repo">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="btn-save-project">
+          <i class="fas fa-save"></i> Save Project to Database
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+
+</html>
