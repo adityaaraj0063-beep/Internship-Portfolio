@@ -99,11 +99,9 @@ npm start
 ```
 
 Open your browser and navigate to:
-```
-http://localhost:5000
-```
 
-> **Note**: On first startup, the database `data/portfolio.db` is automatically created and seeded with real project data!
+https://monumental-medovik-c2b634.netlify.app
+
 
 ---
 
